@@ -1,0 +1,68 @@
+.btn {
+    padding: .45rem 1.5rem .35rem;
+  }
+  
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #c471f5;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1))
+  }
+
+  .content {
+
+     position: relative;
+    
+     height: 800px;
+    
+     min-height: 500px;
+    
+     width: 100%;
+    
+     background: #161415;
+     /* url(../../assets/pink-240517_1280.jpg) no-repeat top center; */
+    
+     background-size: cover !important;
+    
+     -webkit-background-size: cover !important;
+    
+     text-align: center;
+    
+     overflow: hidden;
+    
+    }
+    .nav-tabs {
+      border-bottom:none !important;
+    }
+
+    .nav-tabs .nav-link {
+      /* color: gray;
+      border: 0;
+      border-bottom: 1px solid grey; */
+      margin-left: 80px;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    border: 0;
+    border-radius: 0;
+     color: #f600ff;
+  }
+  
+  .nav-tabs .nav-link.active {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #f600ff;
+      background-color: #161415;
+  }
+
+
+
+
+
+
+
+  

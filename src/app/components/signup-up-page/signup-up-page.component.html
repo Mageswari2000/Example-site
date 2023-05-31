@@ -1,0 +1,34 @@
+
+
+
+   
+   <div class="card">
+    <div class="my-auto mx-md-5 px-md-5 right">
+        <div>                        
+             <h3 style="text-align: center;margin-top: 10px;">Login</h3>
+             <div>
+            
+                 <h3>Create An Account</h3>
+                   <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                    <div class="row mt-5">
+                        <label for="email"><b>Email</b></label>
+                        <input class="inputclass" required  type="text">
+                        </div>
+                        <div class="row mt-3">
+                        <label for="password"><b>Password</b></label>
+                        <input class="inputclass"  type="password">
+                      </div>
+                    <div class="row mt-1 mb-5">
+                     <button class="btn-block btn-color">Submit</button>
+                     <span class="mt-2">Already have an account? 
+                     <a routerLink="/login">signUp</a></span>
+                    </div>
+                   </form>
+               </div>
+          </div>
+    </div>
+</div>
+
+
+
+ 
