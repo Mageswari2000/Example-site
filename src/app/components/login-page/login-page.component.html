@@ -1,25 +1,53 @@
 <!-- <div style="background-image: url('https://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');">  -->
-            <div class="card">
-                <div class="my-auto mx-md-5 px-md-5 right">
-                    <div>                        
-                         <h3 style="text-align: center;margin-top: 10px;">Login</h3>
-                          <form>
-                            <div class="row mt-5">
-                              <label for="email"><b>Email</b></label>
-                              <input class="inputclass" required  type="text">
-                              </div>
-                              <div class="row mt-3">
-                              <label for="password"><b>Password</b></label>
-                              <input class="inputclass"  type="password">
-                            </div>
-                            <div class="row  mb-5">
-                            <button class="btn-block btn-color">Submit</button>
-                            <span class="mt-2"><b>Don't have an account?</b>
-                            <a routerLink="/signUp"><b>signUp</b></a></span>
-                            </div>
-                          </form>
-                      </div>
+  <div class="image">
+<div class="row">
+<div class="col-lg-4">
+  <address class="ease"></address>
+
+  <aside class="ease-in"></aside>
+  
+  <article class="ease-out"></article>
+  
+  <!-- <p class="ease-in-out"></p> -->
+  
+  <p class="linear"></p>
+  
+  <!-- <p class="step-start"></p> -->
+  
+  <ul class="ease"></ul>
+  
+  <li class="steps"></li>
+  
+  <ol class="cubic"></ol>
+</div>
+<div class="col-lg-8">
+  <div class="card">
+    <div class="my-auto mx-md-5 px-md-5 right">
+        <div>                        
+             <h3 style="text-align: center;margin-top: 10px;">Login</h3>
+             <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="row mt-3">
+                  <label><b>Email</b></label>
+                  <input class="inputclass"  type="email" formControlName="email">
                 </div>
-            </div>
+                <div class="row mt-3">
+                  <label><b>password</b></label>
+                  <input class="inputclass"  type="password" formControlName="password">
+                </div>
+                <div class="row  mb-5"> 
+                <button class="btn-block btn-color">Submit</button>
+                <span class="mt-2"><b>Don't have an account?</b>
+                <a routerLink="/signUp"><b>signUp</b></a></span>
+                </div>
+              </form>
+          </div>
+    </div>
+</div>
+</div>
+</div>   
+  </div>
+       
+
+
    <!-- </div> -->
 

@@ -23,14 +23,11 @@
     
      width: 100%;
     
-     background: #161415;
-     /* url(../../assets/pink-240517_1280.jpg) no-repeat top center; */
+     background: url(../../assets/pink-240517_1280.jpg) no-repeat top center;
     
      background-size: cover !important;
     
      -webkit-background-size: cover !important;
-    
-     text-align: center;
     
      overflow: hidden;
     
@@ -58,6 +55,45 @@
       border-bottom: 2px solid #f600ff;
       background-color: #161415;
   }
+
+  .title {
+    font-size: 1.7rem;
+    color: #0D6EFD;
+    margin-top: 10px;
+    margin-right: 30px
+  }
+
+  /* FONT AWESOME GENERIC BEAT */ 
+.fa-beat {
+  animation:fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
+
 
 
 

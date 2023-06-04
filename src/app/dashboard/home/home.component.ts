@@ -7,7 +7,8 @@ import { tab } from '../dashboard.modal';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit,OnDestroy {
-  @Input() inputboolean:tab=new tab();
+  tab=new tab();
+  @Input() inputboolean:string='';
   @Output() outputboolean=new EventEmitter<object>()
   constructor() { }
 
@@ -18,8 +19,8 @@ export class HomeComponent implements OnInit,OnDestroy {
 
   ngOnDestroy() {
     console.log("output")
-      this.inputboolean.ishome=false
-      this.outputboolean.emit(this.inputboolean)
+      this.tab.ishome=false
+      this.outputboolean.emit(this.tab)
   }
 
 }

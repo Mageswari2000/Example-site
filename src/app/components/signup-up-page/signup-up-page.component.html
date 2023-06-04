@@ -1,33 +1,109 @@
-
-
-
-   
-   <div class="card">
-    <div class="my-auto mx-md-5 px-md-5 right">
-        <div>                        
-             <h3 style="text-align: center;margin-top: 10px;">Login</h3>
-             <div>
-            
-                 <h3>Create An Account</h3>
-                   <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
-                    <div class="row mt-5">
-                        <label for="email"><b>Email</b></label>
-                        <input class="inputclass" required  type="text">
-                        </div>
-                        <div class="row mt-3">
-                        <label for="password"><b>Password</b></label>
-                        <input class="inputclass"  type="password">
-                      </div>
-                    <div class="row mt-1 mb-5">
-                     <button class="btn-block btn-color">Submit</button>
-                     <span class="mt-2">Already have an account? 
-                     <a routerLink="/login">signUp</a></span>
-                    </div>
-                   </form>
-               </div>
+<div class="image">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-3">        
+        </div>
+        <div class="col-lg-6 align-items-end">
+          <div class="logo-holder">
+            <div class="bg"></div>
+            <div class="bar"></div>
+            <div class="bar fill1"></div>
+            <div class="bar fill2"></div>
+            <div class="bar fill3"></div>
+            <div class="bar fill4"></div>
+            <div class="bar fill1"></div>
+            <div class="bar fill5"></div>
+            <div class="bar fill6"></div>
+            <div class="bar"></div>
           </div>
+        </div>
+
+       
+      </div>
+      <div class="row">
+        <div class="logo-holder">
+          <div class="bg"></div>
+          <div class="bar"></div>
+          <div class="bar fill1"></div>
+          <div class="bar fill2"></div>
+          <div class="bar fill3"></div>
+          <div class="bar fill4"></div>
+          <div class="bar fill1"></div>
+          <div class="bar fill5"></div>
+          <div class="bar fill6"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+     
+       
     </div>
+   <div class="col-lg-8">
+    <div class="row">
+      <div class="card">
+        <div class="my-auto mx-md-5 px-md-5 right">
+            <div>    
+  
+                 <h3 style="text-align: center;margin-top: 10px;">Register</h3>
+                 <div>         
+                       <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                        <div class="row mt-3">
+                            <label ><b>Name</b></label>
+                            <input class="inputclass" required  type="text"  formControlName="name" >
+                            </div>
+                            <div class="row mt-1">
+                            <label><b>Contact</b></label>
+                            <input class="inputclass"  type="text"  formControlName="contact">
+                          </div>
+                          <div class="row mt-1">
+                            <label><b>Address</b></label>
+                            <input class="inputclass"  type="text" formControlName="address">
+                          </div>
+                          <div class="row mt-1">
+                            <label><b>Email</b></label>
+                            <input class="inputclass"  type="email" formControlName="email">
+                          </div>
+                          <div class="row mt-1">
+                            <label><b>password</b></label>
+                            <input class="inputclass"  type="password" formControlName="password">
+                          </div>
+                        <div class="row mt-1 mb-1">
+                         <button class="btn-block btn-color">Submit</button>
+                         <span class="mt-2">Already have an account? 
+                         <a routerLink="/login">signUp</a></span>
+                        </div>
+                       </form>
+                   </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    
+  <div class="row">
+    <div class="col-lg-9">        
+    </div>
+    <div class="col-lg-3 align-items-end">
+  <div class="logo-holder">
+    <div class="bg"></div>
+    <div class="bar"></div>
+    <div class="bar fill1"></div>
+    <div class="bar fill2"></div>
+    <div class="bar fill3"></div>
+    <div class="bar fill4"></div>
+    <div class="bar fill1"></div>
+    <div class="bar fill5"></div>
+    <div class="bar fill6"></div>
+    <div class="bar"></div>
+  </div>
 </div>
+</div>
+
+   </div>
+  </div>
+ 
+ 
+</div>
+
 
 
 

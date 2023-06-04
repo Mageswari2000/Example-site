@@ -7,7 +7,8 @@ import { tab } from '../dashboard.modal';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit,OnDestroy{
-  @Input() inputboolean:tab=new tab();
+  tab=new tab();
+  @Input() inputboolean:string=''
   @Output() outputboolean=new EventEmitter<object>()
   constructor() { }
 
@@ -17,8 +18,8 @@ export class ProfileComponent implements OnInit,OnDestroy{
 
   ngOnDestroy() {
     console.log("output")
-      this.inputboolean.isprofile=false
-      this.outputboolean.emit(this.inputboolean)
+      this.tab.isprofile=false
+      this.outputboolean.emit(this.tab)
   }
 
 }

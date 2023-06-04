@@ -14,12 +14,16 @@ export class SignupUpPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.signUpForm = this.formBuilder.group({
+      name:[""],
+      contact:[""],
+      address: [""],
       email: [""],
       password: [""]
     })
   }
 
   signUp(){
+    console.log(this.signUpForm.value,"this.signUpForm.value")
     this.http.post<any>("http://localhost:3000/signupUsersList",this.signUpForm.value)
     .subscribe(res=>{
       alert('SIGNIN SUCCESFUL');

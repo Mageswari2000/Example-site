@@ -7,7 +7,8 @@ import { tab } from '../dashboard.modal';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit,OnDestroy {
-@Input() inputboolean:tab=new tab();
+  tab=new tab()
+@Input() inputboolean:any;
 @Output() outputboolean=new EventEmitter<any>()
   constructor() { }
 
@@ -17,8 +18,8 @@ export class ContactComponent implements OnInit,OnDestroy {
 
   ngOnDestroy() {
     console.log("output")
-      this.inputboolean.iscontact=false
-      this.outputboolean.emit(this.inputboolean)
+      this.tab.iscontact=false
+      this.outputboolean.emit(this.tab)
   }
 
 }

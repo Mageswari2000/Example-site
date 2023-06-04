@@ -1,12 +1,12 @@
-
 .card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    margin-top:10px;
-    background-image: linear-gradient(to right, #C22ED0,#5FFAE0);
-    width: 30%;
-    margin-top: 10%;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #C22ED0, #5FFAE0);
+  width: 45%;
+  margin-top: 23%;
+  margin-left: 197px;
 
 }
 
@@ -89,7 +89,7 @@ a:hover {
     }
 }
 
-.inputclass{
+.inputclass {
     border-radius: 50px;
 
 }
@@ -103,3 +103,132 @@ a:hover {
     /* margin-bottom: 20px; */
     background: rgba(255, 255, 255, .2)
 }
+
+
+.image {
+
+    position: relative;
+
+    height: 800px;
+
+    min-height: 500px;
+
+    width: 100%;
+
+    background: url(../../../assets/login.jpg) no-repeat top center;
+
+    background-size: cover !important;
+
+    -webkit-background-size: cover !important;
+
+    overflow: hidden;
+
+}
+
+address{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+  position: relative;
+  animation: MyDiv 4s;
+}
+aside{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  position: relative;
+  animation: MyDiv 4s;
+}
+article{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  position: relative;
+  animation: MyDiv 4s;
+}
+
+p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    position: relative;
+    animation: MyDiv 4s;
+  }
+  ul{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    position: relative;
+    animation: MyDiv 4s;
+  }
+  li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    position: relative;
+    animation: MyDiv 4s;
+  }
+  ol{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    position: relative;
+    animation: MyDiv 4s;
+  }
+  .ease {
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  .ease-in {
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+  .ease-out {
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  .ease-in-out {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .linear {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .step-start {
+    animation-timing-function: step-start;
+  }
+  .step-end {
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+  }
+  .steps {
+    animation-timing-function: steps(6,jump-none);
+    animation-iteration-count: infinite;
+  }
+  .cubic {
+    animation-timing-function: cubic-bezier(.05, .8, .1, .95);
+    animation-iteration-count: infinite;
+  }
+  
+  /* @keyframes MyDiv {
+    
+    /* 100%  {right: 300px; top: 0px;} */
+
+
+  /* } */ 
+
+  @keyframes MyDiv {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 300px; top: 0px;opacity:1.0;}
+    0%   { transform: scale(1.0) rotate(0deg); }
+    50%  { transform: rotate(340deg) translate(-300px,0px) }
+    100% { transform: scale(0.5) rotate(5deg) translate(1140px,-137px); }
+  }
