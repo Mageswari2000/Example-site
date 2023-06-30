@@ -1,1 +1,19 @@
-<p>contact works!</p>
+<div class="row p-5 mt-5">
+    <div class="col-lg-12">
+        <div *ngIf="inputcontact?.contact!=null&&inputcontact?.contact!=undefined
+        &&inputcontact?.address!=null&&inputcontact?.address!=undefined">
+        <h1>Phone &nbsp;&nbsp;  :&nbsp;{{inputcontact?.contact}}</h1>
+        <h1> Address &nbsp;&nbsp;:&nbsp;{{inputcontact?.address}}</h1>
+        </div>
+        <div *ngIf="inputcontact?.contact==null&&inputcontact?.contact==undefined"> 
+          <p> Phone &nbsp;&nbsp;  :&nbsp;9994689050
+          </p>
+          <p>
+            Address &nbsp;&nbsp;:&nbsp;
+          Mageswari N
+          </p>
+          <p style="margin-left:180px">49/5 Main street,</p>
+          <p style="margin-left:180px">  Madurai-5</p>
+            </div>
+    </div>
+</div>

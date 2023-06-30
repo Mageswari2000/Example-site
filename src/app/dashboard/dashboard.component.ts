@@ -17,25 +17,16 @@ export class DashboardComponent implements OnInit {
   constructor(public router:Router,public loginService:LoginService) { }
  
   ngOnInit(){
+    this.tabmodal.ishome = true
     this.loginService.usersubject.subscribe((data:any)=>
     {
-      console.log(data,"dataaaaaaaaaa")
-    this.home=data.name
-    this.contact=data.contact
+    this.home=(data.name!=null&&data.name!=undefined&&data.name!='')?data.name:data;
+    this.contact=data
     this.profile=data.email
-
-
     })
-this.getdata()   
-
   }
-getdata(){
-  setTimeout(()=>{
-    console.log(this.home,"hhhhhhhhhhhhhh");
-  
-  },5000)
 
-}
+
 
   outputfromtab(event:any) {
 
@@ -44,7 +35,6 @@ getdata(){
   Tabchange(event:any) {
     if (event == 'hometab') {
       this.tabmodal.ishome = true
-      console.log(this.home,"oooo")
 
 
     }

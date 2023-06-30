@@ -8,12 +8,12 @@ import { tab } from '../dashboard.modal';
 })
 export class ContactComponent implements OnInit,OnDestroy {
   tab=new tab()
-@Input() inputboolean:any;
+@Input() inputcontact:any;
 @Output() outputboolean=new EventEmitter<any>()
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.inputboolean,"input")
+    console.log(this.inputcontact,"input")
   }
 
   ngOnDestroy() {

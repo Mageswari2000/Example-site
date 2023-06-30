@@ -1,5 +1,5 @@
 import { DoBootstrap, Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,10 +8,19 @@ export class LoginService {
 
   constructor() { }
 
-  usersubject=new Subject()
+  data=  {
+    "name": "Mageswari",
+    "contact": "9994689030",
+    "address": "tnagar",
+    "email": "demomail@gmail.com",
+    "password": "demomail",
+    "id": 1
+  }
 
-sent(data:any){
-  this.usersubject.next(data)
-}
+
+  /////// Behavioral Subject ///////////
+  usersubject=new BehaviorSubject<any>(this.data)
+
+
 
 }

@@ -3,8 +3,7 @@
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
-<p>{{home}}
-</p>
+
         <a class="navbar-brand" href="#">Dasboard</a> 
         <i class=" fa fa-power-off fa-beat title" (click)="Logout()" ></i>
       <!-- Container wrapper -->
@@ -29,16 +28,16 @@
     </ul>
     
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade" id="hometab" role="tabpanel" aria-labelledby="homeid">
-          <app-home *ngIf="tabmodal.ishome" [inputboolean]="home"
+        <div class="tab-pane fade show active" id="hometab" role="tabpanel" aria-labelledby="homeid">
+          <app-home *ngIf="tabmodal.ishome" [inputhome]="home"
             (outputboolean)="outputfromtab($event)"></app-home>
       </div>
       <div class="tab-pane fade" id="profiletab" role="tabpanel" aria-labelledby="profileid">
-        <app-profile *ngIf="tabmodal.isprofile" [inputboolean]="contact"
+        <app-profile *ngIf="tabmodal.isprofile"  [inputprofile]="profile"
         (outputboolean)="outputfromtab($event)"></app-profile>
       </div>
       <div class="tab-pane fade" id="contacttab" role="tabpanel" aria-labelledby="contactid">
-        <app-contact *ngIf="tabmodal.iscontact" [inputboolean]="profile"
+        <app-contact *ngIf="tabmodal.iscontact" [inputcontact]="contact"
         (outputboolean)="outputfromtab($event)"></app-contact>
       </div>
     </div>

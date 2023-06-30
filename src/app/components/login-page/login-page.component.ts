@@ -29,10 +29,10 @@ export class LoginPageComponent implements OnInit {
       });
       if(user){
         console.log(user,"user")
-        this.loginService.sent(user);
+        this.loginService.usersubject.next(user)
         alert('Login Succesful');
         this.loginForm.reset()
-      this.router.navigate(["dashboardpage"])
+       this.router.navigate(["dashboardpage"])
 
       }else{
         alert("user not found")

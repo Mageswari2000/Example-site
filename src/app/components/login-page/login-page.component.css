@@ -218,17 +218,22 @@ p{
     animation-iteration-count: infinite;
   }
   
-  /* @keyframes MyDiv {
-    
-    /* 100%  {right: 300px; top: 0px;} */
+  
 
-
-  /* } */ 
-
+  address, aside, article, p, ul, li, ol {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: MyDiv 4s;
+    animation-fill-mode: both;
+  }
+  
   @keyframes MyDiv {
-    0%   {left: 0px; top: 0px;}
-    100%  {left: 300px; top: 0px;opacity:1.0;}
-    0%   { transform: scale(1.0) rotate(0deg); }
-    50%  { transform: rotate(340deg) translate(-300px,0px) }
-    100% { transform: scale(0.5) rotate(5deg) translate(1140px,-137px); }
+    0%   {left: 0px; top: 0px; opacity: 1;}
+    50%  {left: 300px; top: 0px; opacity: 1;}
+    51%  {left: 300px; top: 0px; opacity: 0;}
+    52%  {left: 300px; top: 0px; opacity: 0; visibility: hidden;}
+    53%  { transform: scale(1.0) rotate(0deg); }
+    100% { transform: scale(0.5) rotate(5deg) translate(1140px, -137px); opacity: 0; visibility: hidden;}
   }

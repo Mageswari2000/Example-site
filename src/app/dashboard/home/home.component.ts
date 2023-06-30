@@ -8,12 +8,12 @@ import { tab } from '../dashboard.modal';
 })
 export class HomeComponent implements OnInit,OnDestroy {
   tab=new tab();
-  @Input() inputboolean:string='';
+  @Input() inputhome:any;
   @Output() outputboolean=new EventEmitter<object>()
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.inputboolean,"input")
+    console.log(this.inputhome,"input")
 
   }
 

@@ -8,12 +8,12 @@ import { tab } from '../dashboard.modal';
 })
 export class ProfileComponent implements OnInit,OnDestroy{
   tab=new tab();
-  @Input() inputboolean:string=''
+  @Input() inputprofile:any;
   @Output() outputboolean=new EventEmitter<object>()
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.inputboolean,"input")
+    console.log(this.inputprofile,"input")
   }
 
   ngOnDestroy() {
